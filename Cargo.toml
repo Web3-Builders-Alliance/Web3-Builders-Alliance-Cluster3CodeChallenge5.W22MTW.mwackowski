@@ -1,0 +1,19 @@
+[workspace]
+members = ["contracts/*"]
+
+
+[profile.release.package.cw3-fixed-multisig]
+codegen-units = 1
+incremental = false
+
+[profile.release.package.counter]
+codegen-units = 1
+incremental = false
+
+[profile.release]
+rpath = false
+lto = true
+overflow-checks = true
+opt-level = 3
+debug = false
+debug-assertions = false
